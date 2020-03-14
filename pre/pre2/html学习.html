@@ -1,0 +1,166 @@
+<!DOCTYPE html>		<!--声明html-->
+<html>				<!--根元素-->
+	
+<head> 						<!--元数据、标题等-->
+<meta charset="utf-8"> 		<!--元数据utf8编码-->
+<meta name="description" content="描述">	  <!--描述-->
+<meta name="author" content="作者">		  <!--作者-->
+<title>菜鸟教程(runoob.com)</title>  		<!--网页标题-->
+
+<style type="text/css">		
+body {background-color:white}
+p {color:red}
+</style>					<!--内部样式表-->
+<link rel="stylesheet" type="text/css" href="mystyle.css">	<!--外部样式表-->
+</head>
+	
+<body>		<!--主体，浏览器中可见部分-->
+<!--注释-->
+
+<a href="https://www.runoob.com/try/try.php?filename=tryhtml_intro">音频视频无法加载时，请点击本链接，将代码复制到菜鸟教程编辑器打开</a>
+
+	
+<h1>一级标题</h1>	<!--标题前后自动换行-->
+<h2>二级标题</h2>
+<h3>三级标题</h3>
+<h4>四级标题</h4>
+<h5>五级标题</h5>
+<h6>六级标题</h6>
+<hr>					<!--分割线-->
+<br>	 				<!--换行-->
+<p>段落1</p> 			  <!--段落前后自动换行-->
+<p>段落2</p> 
+<b>粗体文本</b><br>		 <!--也可以用<strong>-->
+<i>斜体文本</i><br>
+<code>计算机代码</code><br>
+这是 <sub> 下标</sub> 和 <sup> 上标</sup><br>
+<small>小号字</small><br>
+<ins>插入字</ins><br>
+<del>删除字</del><br>
+<p style="color:blue;margin-left:20px;">内联样式1</p> 	<!--内联样式-->
+<p style="font-family:arial;color:purple;font-size:25px;">内联样式2</p>
+<h1 style="text-align:center;">居中对齐的标题</h1>
+	
+<a href="https://www.runoob.com" id="test">超链接</a><br>	<!--id为标记-->
+<a href="https://www.runoob.com/" target="_blank" rel="noopener noreferrer">超链接（新窗口打开）</a>
+
+<br>
+<img src="/images/logo.png" width="258" height="39" alt="图片替换文本" style="zoom: 33%;"/>	<!--图片-->
+
+<br>
+<table border="1">		<!--表格，border为边框，自动换行-->
+	<tr>
+        <th>Header 1</th>		<!--th定义单元数据-->
+        <th>Header 2</th>
+    </tr>
+    <tr>				<!--tr定义行-->
+        <td>row 1, cell 1</td> 	<!--td定义单元数据-->
+        <td>row 1, cell 2</td>
+    </tr>
+    <tr>
+        <td>row 2, cell 1</td>
+        <td>row 2, cell 2</td>
+    </tr>
+</table>
+
+<ul>	<!--ul定义无序列表，自动换行-->
+<li>无序列表1</li>
+<li>无序列表2</li>
+</ul>	
+
+<span>
+<ol>	<!--ol定义有序列表-->
+<li>有序列表1</li>
+<li>有序列表2</li>
+</ol>
+</span> <!--用于分割，无意义，可用于设置样式-->
+
+<div>	<!--用于分割，无意义，可用于设置样式-->
+<dl>	<!--dl定义自定义列表-->
+<dt>自定义列表项1</dt>
+<dd>- 自定义列表项定义1</dd>
+<dt>自定义列表项2</dt>
+<dd>- 自定义列表项2</dd>
+</dl>
+</div>
+
+<form action="">
+Username: <input type="text" name="username"><br>
+Password: <input type="password" name="password">
+</form>
+
+<form>
+<input type="radio" name="sex" value="male">单选框1<br>
+<input type="radio" name="sex" value="female">单选框2
+</form>
+
+<form>
+<input type="checkbox" name="vehicle" value="Bike">复选框1<br>
+<input type="checkbox" name="vehicle" value="Car">复选框2
+</form>
+
+<form name="input" action="html_form_action.php" method="get">	<!--action对应的文件对输入数据进行处理-->
+Username: <input type="text" name="user">
+<input type="submit" value="提交按钮">
+</form>
+
+<form action="">
+<select name="cars">
+<option value="volvo">下拉列表1</option>
+<option value="saab">下拉列表2</option>
+<option value="fiat" selected>默认值</option>
+<option value="audi">下拉列表3</option>
+</select>
+</form>
+
+<textarea rows="10" cols="30">
+文本框
+</textarea>
+<br>
+
+<iframe src="demo_iframe.htm" name="iframe_a" width="800" height="800" frameborder="3"></iframe><br>
+<p><a href="https://www.runoob.com/html/html-colorvalues.html" target="iframe_a">点我看html颜色值</a></p>
+因为 a 标签的 target 属性是名为 iframe_a 的 iframe 框架，所以在点击链接时页面会显示在 iframe框架中。
+<p style="background-color:rgba(183,79,146)">
+通过 rbg 值设置背景颜色
+</p>
+
+<script>
+document.write("插入javascript脚本")
+</script>
+<noscript>不支持JavaScript的替代内容</noscript>
+
+<br>
+小于号要这么写&lt<br>
+还有&amp;&quot;&cent;&times;&divide;&trade;<br>
+音标a&#768;a&#769;a&#770;a&#771;<br>
+不&nbsp&nbsp&nbsp&nbsp间&nbsp&nbsp断&nbsp空格<br>
+普通空         格     会被截断<br>
+	
+obejct元素插入flash脚本和音频等<br>
+<object width="400" height="50" data="bookmark.swf"></object>
+<object height="50" width="100" data="horse.mp3"></object>
+音频，为了版本兼容：<br>
+<audio controls>
+  <source src="horse.mp3" type="audio/mpeg">
+  <source src="horse.ogg" type="audio/ogg">
+  Your browser does not support this audio format.
+</audio>
+
+视频<br>
+<video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  <source src="movie.webm" type="video/webm">
+  <object data="movie.mp4" width="320" height="240">
+    <embed src="movie.swf" width="320" height="240">
+  </object> 
+</video>
+
+<a href="intro.swf">超链接打开视频</a><br>
+
+embed打开优酷视频<br>
+<embed src='https://player.youku.com/player.php/sid/XMTQ3MjM5Mjc0MA==/v.swf' allowFullScreen='true' quality='high' width='480' height='400' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed>
+	
+</body>
+</html>
