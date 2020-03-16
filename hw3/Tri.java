@@ -64,7 +64,7 @@ public class Tri extends Term {
     }
 
     public String toString() {
-        if (content.toString().equals("0")) {
+        if (content.toString().equals("0") && type.equals("sin")) {
             return "0";
         } else if (deg.equals(zero)) {
             return "1";
